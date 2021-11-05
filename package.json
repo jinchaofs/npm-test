@@ -1,0 +1,51 @@
+{
+  "name": "@cyclone/npm-test",
+  "version": "1.1.3",
+  "description": "cyclone npm test",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --fix lib test",
+    "test": "mocha -R spec test/*.test.js",
+    "test-cov": "nyc -r=html -r=text -r=lcov mocha -t 3000 -R spec test/*.test.js",
+    "ci": "npm run lint && npm run test-cov && codecov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinchaofs/npm-test.git"
+  },
+  "keywords": [
+    "Laiye",
+    "Wulai",
+    "OpenAPI",
+    "SDK",
+    "NodeSDK"
+  ],
+  "files": [
+    "lib",
+    "index.js"
+  ],
+  "types": "lib/client.d.ts",
+  "author": "LiJinChao lijinchao@laiye.com",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/jinchaofs/npm-test.git/issues"
+  },
+  "homepage": "https://github.com/jinchaofs/npm-test.git#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "codecov": "^3.5.0",
+    "debug": "^4.1.1",
+    "eslint": "^6.1.0",
+    "expect.js": "^0.3.1",
+    "mocha": "^6.2.0",
+    "muk": "^0.5.3",
+    "nyc": "^14.1.1",
+    "rewire": "^4.0.1"
+  },
+  "dependencies": {
+    "crypto-js": "^3.1.9-1",
+    "debug": "^4.1.1",
+    "httpx": "^2.2.0",
+    "log4js": "^5.1.0"
+  }
+}
