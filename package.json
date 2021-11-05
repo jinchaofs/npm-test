@@ -22,7 +22,7 @@
     "index.js"
   ],
   "types": "lib/client.d.ts",
-  "author": "LiJinChao lijinchao@laiye.com",
+  "author": "LiJinChao jinchao.li@cyclone-robotics.com",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/jinchaofs/npm-test.git/issues"
